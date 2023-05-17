@@ -80,20 +80,89 @@ not in 和 in
 enumerate index+value
 """
 
-spam = [2, 5, 3.14, 1, -7]
-spam.sort()
-print(spam)
+# spam = [2, 5, 3.14, 1, -7]
+# spam.sort()
+# print(spam)
 
-bacon = ['Alice', 'ants', 'Bob', 'badgers']
-bacon.sort()
-print(bacon)
+# bacon = ['Alice', 'ants', 'Bob', 'badgers']
+# bacon.sort()
+# print(bacon)
 
-bacon.sort(key=str.lower)
-print(bacon)
+# bacon.sort(key=str.lower)
+# print(bacon)
 
-bacon.reverse()
-print(bacon)
+# bacon.reverse()
+# print(bacon)
 
 """
 默认是ASCII排序，大写字母在前，字典序需要单独设置
 """
+
+# name = 'Zophie'
+# print(name[0])
+# print(name[-2])
+# print(name[0:4])
+# print('Zo' in name)
+# print('p' not in name)
+# for i in name:
+#     print('value: ' + i)
+
+# name[2] = 't' # Error
+
+"""
+字符串是char set 跟Java还算相似
+赋值是不可以的
+"""    
+
+# eggs = ('hello', 42, 0.5)
+# print(eggs[0])
+# print(eggs[1:3])
+# print(len(eggs))
+# eggs[1] = 99 # Error
+
+"""
+tuple 元组，不可变序列，因为不可变底层会优化效率更好
+"""
+
+# print(type(('hello',)))
+# print(type(('hello')))
+
+# print(tuple(['cat', 'dog', 5]))
+# print(list(('cat', 'dog', 5)))
+# print(list('hello'))
+
+"""
+tuple list 转换
+"""
+
+# bacon = 'Hello'
+# print(id(bacon))
+# bacon += ' World'
+# print(id(bacon))
+
+# eggs = ['cat', 'dog']
+# print(id(eggs))
+# eggs.append('moose')
+# print(id(eggs))
+# eggs = ['bat', 'rat']
+# print(id(eggs))
+
+"""
+python中的所有值都有一个唯一标识，内存地址
+"""
+
+# import copy
+# spam = ['A', 'B', 'C']
+# print(id(spam))
+# bacon = copy.copy(spam)
+# print(id(bacon))
+# bacon[1] = 42
+# print(bacon)
+# print(id(bacon))
+
+"""
+浅拷贝 深拷贝是copy.deepcopy()
+下一节的生命游戏就不cv了 在 conwaysgameoflibe.py
+"""
+
+
